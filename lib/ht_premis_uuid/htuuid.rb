@@ -1,0 +1,3 @@
+module HtPremisUuid
+  HT_UUID = '09A5DAD6-3484-11E0-9D45-077BD5215A96'
+end
