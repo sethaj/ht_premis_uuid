@@ -6,16 +6,12 @@ A UUID creator specifically for PREMIS events used in the Hathitrust.
 
 Add this line to your application's Gemfile:
 
-    gem 'ht_premis_uuid'
+    gem 'ht_premis_uuid', :git => 'https://github.com/sethajoh/ht_premis_uuid.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install ht_premis_uuid
-
 ## Usage
 
-uuid = HtPremisUuid.generate('ht namespace', ' ht id', 'premis event name')
+    uuid = HtPremisUuid.generate('ht namespace', ' ht id', 'premis event name')
