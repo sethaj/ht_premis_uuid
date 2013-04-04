@@ -15,4 +15,15 @@ class TestHtPremisUuid < Test::Unit::TestCase
     assert HtPremisUuid.generate('namespace', 'object id', 'premis event name')
       .match('[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}');
   end
+
+  # If same parameters used, UUID should be same.
+  def test_reproducible
+    time = Time.now
+    ns   = 'namespace'
+    o_id = 'object id'
+    p_e  = 'premis event name'
+    uuid_1 = HtPremisUuid.generate(ns, o_id, p_e, :time => time)
+    uuid_2 = HtPremisUuid.generate(ns, o_id, p_e, :time => time)
+    assert uuid_1 == uuid_2, "Should be same: #{uuid_1} #{uuid_2}";
+  end
 end
