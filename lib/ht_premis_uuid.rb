@@ -4,9 +4,13 @@ require "ht_premis_uuid/htuuid"
 
 module HtPremisUuid
 
-  def self.generate (namespace, object_id, premis_event)
+  def self.generate (namespace, object_id, premis_event, options={})
+    defaults = {
+      :time => Time.now
+    }
+    options = defaults.merge(options)
 
-    now = Time.now.gmtime.iso8601
+    now = options[:time].gmtime.iso8601
 
     tohash  = [namespace, object_id, premis_event, now].join('-')
 
