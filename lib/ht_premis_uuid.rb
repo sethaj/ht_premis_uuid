@@ -1,3 +1,4 @@
+require "time"
 require "uuidtools"
 require "ht_premis_uuid/version"
 require "ht_premis_uuid/htuuid"
