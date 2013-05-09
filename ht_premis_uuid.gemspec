@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = HtPremisUuid::VERSION
   spec.authors       = ["Michigan Publishing"]
   spec.email         = ["lib.ptg@umich.edu"]
-  spec.summary       = %q{ A UUID creator specifically for PREMIS events used in the Hathitrust. }
+  spec.summary       = %q{ A UUID (Version 3) generator for PREMIS events based off of a unique object id}
   spec.homepage      = ""
   spec.license       = "MIT"
 
