@@ -1,6 +1,6 @@
 # HtPremisUuid
 
-A UUID creator specifically for PREMIS events used in the Hathitrust.
+A UUID creator specifically for PREMIS events based on UUID Version 3 (uuid built with a unique object identifier).
 
 ## Installation
 
