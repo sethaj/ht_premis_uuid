@@ -6,7 +6,7 @@ A UUID creator specifically for PREMIS events based on UUID Version 3 (uuid buil
 
 Add this line to your application's Gemfile:
 
-    gem 'ht_premis_uuid', :git => 'https://github.com/sethajoh/ht_premis_uuid.git'
+    gem 'ht_premis_uuid', :git => 'https://github.com/sethaj/ht_premis_uuid.git'
 
 And then execute:
 

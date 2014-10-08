@@ -6,7 +6,7 @@ require 'ht_premis_uuid/version'
 Gem::Specification.new do |spec|
   spec.name          = "ht_premis_uuid"
   spec.version       = HtPremisUuid::VERSION
-  spec.authors       = ["Michigan Publishing"]
+  spec.authors       = ["Seth Johnson"]
   spec.email         = ["lib.ptg@umich.edu"]
   spec.summary       = %q{ A UUID (Version 3) generator for PREMIS events based off of a unique object id}
   spec.homepage      = ""
